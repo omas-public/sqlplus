@@ -22,11 +22,11 @@ SET HEADING OFF
 --------------------------------------------------------------------------------
 
 DEFINE _EDITOR=/usr/bin/vim
-SET EDITFILE "afiedt.sql"
 
-SET PAGESIZE 9999
-SET LINESIZE 9999
-SET LONG 999999
+SET EDITFILE "afiedt.sql"
+SET PAGESIZE 999
+SET LINESIZE 999
+SET LONG 99999
 
 SET AUTOCOMMIT OFF
 

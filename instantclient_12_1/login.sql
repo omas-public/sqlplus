@@ -1,3 +1,7 @@
+-- date format
+
+ALTER SESSION SET NLS_DATE_FORMAT='RR-MM-DD'; 
+
 -- JOB_HISTORY
 
 col employees_id for 999

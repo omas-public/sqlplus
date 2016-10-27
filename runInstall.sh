@@ -7,4 +7,12 @@ then
 fi
 
 cp ./sqlplus.sh $HOME/bin/
-cp -r ./instantclient_12_1 $HOME
+source $HOME/.profile
+
+if [ -d $HOME/instantclient_12_1 ]
+then
+    rm -rf $HOME/instantclient_12_1
+fi
+
+
+cp -r ./instantclient_12_1 $HOME/

@@ -9,8 +9,7 @@ BASE=${HOME}/instantclient_12_1
 
 export LD_LIBRARY_PATH=${BASE}:${LD_LIBRARY_PATH}
 export SQLPATH=${BASE}:${SQL_PATH}
-export NO_PROXY=localhost,$ADDR
-export no_proxy=localhost,$ADDR
-
+export no_proxy="127.0.0.1,localhost,$ADDR"
+export NO_PROXY="$no_proxy"
 
 rlwrap $BASE/sqlplus $USER/$PASS@$ADDR:$PORT/$SID
